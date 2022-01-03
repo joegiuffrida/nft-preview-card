@@ -1,8 +1,18 @@
 import Card from '../ui/Card';
+import Image from 'next/image';
 
 import classes from './NftItem.module.css';
 
-const NftItem = ({ id, title, image, description, balance, time, creator }) => {
+const NftItem = ({
+  id,
+  title,
+  image,
+  description,
+  balance,
+  time,
+  avatar,
+  creator,
+}) => {
   return (
     <li className={classes.item}>
       <Card>
@@ -15,10 +25,13 @@ const NftItem = ({ id, title, image, description, balance, time, creator }) => {
           <p>{balance}</p>
           <p>{time}</p>
         </div>
-
-        <div>
-          <p>creator icon</p>
-          <p>{creator}</p>
+        <div className={classes.creator}>
+          <div>
+            <Image src={`/${avatar}`} width="100%" height="100%" />
+          </div>
+          <p>
+            <span>Creation of</span> {creator}
+          </p>
         </div>
       </Card>
     </li>

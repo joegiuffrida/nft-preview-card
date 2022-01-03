@@ -2,3 +2,25 @@
   display: flex;
   flex-direction: column;
 }
+
+.creator {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.creator div {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.creator p {
+  margin-left: 20px;
+  color: white;
+}
+
+.creator p span {
+  color: hsl(215, 51%, 70%);
+}

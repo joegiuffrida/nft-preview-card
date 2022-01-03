@@ -14,6 +14,7 @@ const NftCardList = ({ nftCards }) => {
           description={nft.description}
           balance={nft.balance}
           time={nft.time}
+          avatar={nft.avatar}
           creator={nft.creator}
         />
       ))}

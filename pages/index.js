@@ -12,6 +12,7 @@ const DUMMY_NFT_DATA = [
     description: 'Our Equilibrium collection promotes balance and calm.',
     balance: '0.041 ETH',
     time: '3 days left',
+    avatar: 'image-avatar.png',
     creator: 'Jules Wyvern',
   },
 ];
@@ -23,7 +24,7 @@ const Home = () => {
         <title>NFT Preview Card</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-32x32.png" />
       </Head>
 
       <main className={styles.main}>
