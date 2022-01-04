@@ -18,6 +18,9 @@ const NftItem = ({
       <Card>
         <div className={classes.image}>
           <Image src={`/${image}`} layout="fill" objectFit="cover" />
+          <div className={classes.hoverImage}>
+            <Image src="/icon-view.svg" width={45} height={45} layout="fixed" />
+          </div>
         </div>
         <div className={classes.content}>
           <h2>{title}</h2>
