@@ -30,8 +30,7 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>NFT Preview Card</title>
-
+        <title>NFT Preview Cards</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon-32x32.png" />
         <link
