@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
 import NftCardList from '../components/NftCardList';
@@ -14,6 +13,16 @@ const DUMMY_NFT_DATA = [
     time: '3 days left',
     avatar: 'image-avatar.png',
     creator: 'Jules Wyvern',
+  },
+  {
+    id: 'm2',
+    title: 'Equilibrium #3430',
+    image: 'image-equilibrium.jpg',
+    description: 'Our Equilibrium collection promotes chaos and stress.',
+    balance: '40.041 ETH',
+    time: '2 days left',
+    avatar: 'image-avatar.png',
+    creator: 'Mr. Butterflies & Rainbows',
   },
 ];
 
@@ -32,6 +41,7 @@ const Home = () => {
       </Head>
 
       <main className={styles.main}>
+        <h1>NFT Preview Cards</h1>
         <NftCardList nftCards={DUMMY_NFT_DATA} />
       </main>
     </div>

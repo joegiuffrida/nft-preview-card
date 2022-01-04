@@ -1,6 +1,7 @@
 .item {
   display: flex;
   flex-direction: column;
+  margin: 2rem 0;
 }
 
 .image {
@@ -21,8 +22,9 @@
 .content p {
   color: hsl(215, 51%, 70%);
   font-weight: 300;
-  line-height: 25px;
+  line-height: 2rem;
   font-size: 1.25rem;
+  margin: 1.75rem 0;
 }
 
 .stats {
@@ -39,6 +41,10 @@
   font-weight: 600;
 }
 
+.stats p {
+  margin: 0;
+}
+
 .stats .balance p {
   padding-left: 10px;
 }
@@ -51,6 +57,11 @@
 
 .stats .time p {
   padding-left: 10px;
+}
+
+.border {
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  margin: 1rem 0;
 }
 
 .creator {

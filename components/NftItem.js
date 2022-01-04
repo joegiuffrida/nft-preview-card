@@ -33,6 +33,7 @@ const NftItem = ({
             <p>{time}</p>
           </div>
         </div>
+        <div className={classes.border}></div>
         <div className={classes.creator}>
           <div>
             <Image src={`/${avatar}`} width="100%" height="100%" />
